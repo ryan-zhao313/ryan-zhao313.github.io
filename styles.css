@@ -1,0 +1,223 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #A8D0E6;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 0px; /* Adjust based on the nav height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Changed to 'vh' for full view height */
+  overflow-y: auto; /* Ensures entire page is scrollable */
+}
+
+html {
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+}
+
+.nav {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000; /* Ensures nav is above all other content */
+  background-color: #333; /* Ensures nav has a background color */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #b3b3b3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #222;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #b3b3b3;
+  padding: 6px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.footer__text {
+  font-size: 0.8rem;
+}
+
+.footer__text a{
+  color:#bfbfbf;
+  transition:color .2s ease-in-out;
+  margin:0 .3rem;
+}
+
+.footer__text a:hover, .footer__text a:active{
+  color:#36d1dc;
+}
+
+/* Back to top button */
+.back-to-top i{
+  color:#fff;
+  margin:1rem 0 1.6rem;
+  transition:all 200ms ease;
+}
+
+.back-to-top i:hover{
+  transform:translateY(-2px);
+}
+
+/* Overall styling for the container */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling individual project boxes */
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title styling */
+.grid-item .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Description paragraph styling */
+.grid-item p {
+  font-size: 14px;
+  color: #666;
+  flex-grow: 1;
+}
+
+/* Image styling */
+.grid-item img.center {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Video link styling */
+.grid-item .video-link {
+  text-align: center;
+  display: block;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.grid-item .video-link:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the About Section */
+#about {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px; /* Ensure the container is not too wide or narrow */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Flexbox setup for the row containing all elements */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for the image container */
+.about-wrapper__image {
+  flex: 1 1 60%; /* Adjusted to take up correct space */
+  max-width: 50%;
+  padding-right: 20px;
+}
+
+img.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional: adds rounded corners to the image */
+}
+
+/* Styling for the information container */
+.about-wrapper__info {
+  flex: 1 1 60%; /* takes up 60% of the flex container, adjust as necessary */
+  max-width: 60%;
+}
+
+.about-wrapper__info-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Adjustments for call-to-action buttons */
+.about-wrapper__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align buttons to the start of the column */
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #0056b3;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.cta-btn:hover {
+  background-color: #004080;
+}
+

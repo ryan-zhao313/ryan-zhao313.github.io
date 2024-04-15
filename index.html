@@ -3,30 +3,88 @@
 
 <head>
 	<meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="height=device-height, initial-scale=1.0">
 
   <title>Ryan Zhao</title>
+	<meta name="author" content="Ryan Zhao">
+	<meta name="description" content="Ryan Zhao's personal website">
+	<meta name="keywords" content="Ryan Zhao, Ryan, Zhao, ryan-zhao-313, ryan-zhao">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="height=device-height, initial-scale=1">
-	<meta name="author" content="Adam Wang">
-	<meta name="description" content="Adam Wang's personal website">
-	<meta name="keywords" content="Adam Wang, Adam, Wang, CS, Computer Science, UW, University of Washington, Seattle">
-	<meta property="og:title" content="Adam Wang">
-	<meta property="og:site_name" content="Adam Wang personal website">
-	<meta property="og:description" content="Adam Wang's personal website">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://wang-adam.github.io">
-	<meta property="og:image" content="https://github.com/wang-adam/wang-adam.github.io/blob/master/newWebsiteAssets/newwebsitethumbnail.jpg?raw=true">
-	<meta property="og:image:width" content="3190">
-	<meta property="og:image:height" content="1857">
-	<meta property="og:image:type" content="image/png">
-
-
-	<meta property="og:locale" content="en_US">
-
+  <!-- CSS Styles -->
 	<link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
 </head>
+
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="#home" class="navbar__link">Home</a></li>
+      <li><a href="#about" class="navbar__link">About</a></li>
+      <li><a href="#projects" class="navbar__link">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row about-wrapper">
+        <div class="about-wrapper__image">
+          <img
+            class="img-fluid"
+            src="/assets/images/profile.jpg"
+            alt="Profile Image"
+            width="450"
+            height="350"
+          />
+        </div>
+        <span class="about-wrapper__cta">
+          <a href="mailto:zhaoryan20@outlook.com" class="cta-btn cta-btn--resume">Contact Me</a>
+          <a href="/assets/Ryan_Zhao_Resume.pdf" class="cta-btn cta-btn--resume">View Resume</a>
+        </span>
+        <div class="about-wrapper__info">
+          <p class="about-wrapper__info-text">
+            Hello! I am a graduating senior at
+            <a href="http://www.emory.edu/" target="_blank" rel="noreferrer">Emory University</a>
+            studying Computer Science. I enjoy learning all fields of computer science, but am specifically
+            interested in AI and machine learning.
+          </p>
+          <P class="about-wrapper__info-text">
+            I interned at <a href="https://expediagroup.com/" target="_blank" rel="noreferrer">Expedia Group</a>
+             last summer and I am currently looking for software engineering roles.
+          </P>
+          <p class="about-wrapper__info-text">
+            Check out some of my projects I've worked on over the years.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END About Section -->
+
+  <!--Projects Section-->
+  <section id="projects"></section>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__text">
+          <ul>
+            <a href="https://github.com/ryan-zhao313">Github</a>
+            <a href="/assets/Ryan_Zhao_Resume.pdf">Resume</a>
+            <a href="https://www.linkedin.com/in/ryanzhao63/">LinkedIn</a>
+          </ul>
+        </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

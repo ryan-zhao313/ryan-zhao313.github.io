@@ -1,0 +1,24 @@
+[
+  {
+    "id": "swooperMarket",
+    "title": "SwooperMarket",
+    "description": "A marketplace web-app for buying and selling items at Emory University",
+    "image": "./assets/images/swoopermarket-logo.jpg",
+    "url": "https://github.com/selmahassan/DebugDemon---CS370",
+    "video": "https://youtu.be/OlX6z_ugQhw?si=AAYtdbzivoZtYUxS"
+  },
+  {
+    "id": "pacman",
+    "title": "Pacman Projects",
+    "description": "Implemented a custom Pac-Man AI using Python to play the classic arcade game",
+    "image": "./assets/images/pacman.gif",
+    "url": "#"
+  },
+  {
+    "id": "poetryVisualization",
+    "title": "Poetry Visualization",
+    "description": "Interactive poetry visualization of Asian American disparity in the US",
+    "image": "./assets/images/poetryvis.JPG",
+    "url": "https://github.com/ryan-zhao313/AisanDisparityVisualization"
+  }
+]
