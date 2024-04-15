@@ -23,6 +23,7 @@ html {
   z-index: 1000;
   background-color: #333;
 }
+*/
 
 ul {
   list-style-type: none;
@@ -46,20 +47,19 @@ li a {
 li a:hover {
   background-color: #222;
 }
-*/
 
 .footer {
   bottom: 0;
   width: 100%;
   background-color: #222;
   color: #b3b3b3;
-  padding: 10px 0;
+  padding: 16px 0px;
   text-align: center;
   z-index: 1000;
 }
 
 .footer__text {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .footer__text a{
@@ -114,7 +114,7 @@ li a:hover {
   font-size: 16px;
   color: #444;
   flex-grow: 1;
-  margin-bottom: 10px; /* Ensure consistent margin */
+  margin: 8px 0px 0px;
 }
 
 .grid-item img.center {
@@ -169,20 +169,21 @@ li a:hover {
 /* Styling for the image container */
 .about-wrapper__image {
   margin-bottom: 20px;
-  flex: 1 1 30%; /* Takes up less space than text */
-  max-width: 30%;
+  flex: 1 1 25%;
+  max-width: 25%;
 }
 
 img.img-fluid {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  padding: 16px;
 }
 
 /* Styling for the information container */
 .about-wrapper__info {
-  flex: 1 1 68%; /* More space allocated to text */
-  max-width: 68%;
+  flex: 1 1 70%; /* More space allocated to text */
+  max-width: 70%;
   text-align: left;
 }
 
