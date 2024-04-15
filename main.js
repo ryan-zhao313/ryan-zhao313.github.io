@@ -19,7 +19,7 @@ function displayProjects() {
           video = `<a href="${project.video}" class="video-link">Watch video</a>`;
         }
 
-        projectDiv.innerHTML = `${title}${description}${media}`;
+        projectDiv.innerHTML = `${title}${description}${media}${video}`;
         projectsContainer.appendChild(projectDiv);
       });
     })
