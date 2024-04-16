@@ -18,7 +18,7 @@ html {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   overflow: hidden;
   background-color: #222;
   width: 100%;
@@ -26,24 +26,13 @@ ul {
   justify-content: center;
 }
 
-li a {
-  display: block;
-  color: #b3b3b3;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #222;
-}
-
 .footer {
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #222;
-  color: #b3b3b3;
-  padding: 16px 0px;
+  color: #fff;
+  padding: 26px 0px;
   text-align: center;
   z-index: 1000;
 }
@@ -58,8 +47,12 @@ li a:hover {
   margin:0 .3rem;
 }
 
-.footer__text a:hover, .footer__text a:active{
-  color:#36d1dc;
+.footer__text a:hover {
+  background-color: #444;
+}
+
+.footer__text a:active {
+  color: #ffffff;
 }
 
 /* Styling for the Projects section */
@@ -145,7 +138,7 @@ li a:hover {
   font-size: 32px;
   color: #222;
   text-align: center;
-  margin: 0px 0px 30px;
+  margin: 20px 0px 20px;
 }
 
 /* Flexbox setup for the row containing all elements */
