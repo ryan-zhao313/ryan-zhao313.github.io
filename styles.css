@@ -226,7 +226,7 @@ img.img-fluid:hover {
 
 /* Dark mode specific styles */
 @media (prefers-color-scheme: dark) {
-  body, .footer {
+  body, .footer, .section-title {
     background-color: #222;
     color: #b3b3b3;
   }
