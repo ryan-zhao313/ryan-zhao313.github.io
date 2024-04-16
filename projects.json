@@ -2,15 +2,15 @@
   {
     "id": "swooperMarket",
     "title": "SwooperMarket",
-    "description": "A marketplace web-app for buying and selling items at Emory University",
+    "description": "Marketplace web-app for buying and selling items at Emory University",
     "image": "./assets/images/swoopermarket-logo.jpg",
     "url": "https://github.com/selmahassan/DebugDemon---CS370",
     "video": "https://youtu.be/OlX6z_ugQhw?si=AAYtdbzivoZtYUxS"
   },
   {
     "id": "pacman",
-    "title": "Pacman Projects",
-    "description": "Implemented a custom Pac-Man AI using Python to play the classic arcade game",
+    "title": "Pacman Pathfinding AI",
+    "description": "Custom pathfinding Pac-Man AI to beat the classic arcade game",
     "image": "./assets/images/pacman.gif",
     "url": "#"
   },
