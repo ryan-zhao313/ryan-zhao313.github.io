@@ -125,6 +125,7 @@ ul {
 .video-link-container {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 /* Video link styling */
@@ -137,7 +138,6 @@ ul {
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin: 5px 10px;
   width: auto;
   position: relative;
   z-index: 2;
@@ -273,7 +273,6 @@ img.img-fluid:hover {
 }
 
 .picture {
-  cursor: pointer;
   margin-right: 30px;
   margin-left: 30px;
 }
@@ -281,6 +280,15 @@ img.img-fluid:hover {
 .image-caption {
   font-size: 12px;
   margin-top: 5px
+}
+
+.scroll-left, .scroll-right {
+  border: none;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .about-ruby {
