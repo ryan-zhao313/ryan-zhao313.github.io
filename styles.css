@@ -282,15 +282,6 @@ img.img-fluid:hover {
   margin-top: 5px
 }
 
-.scroll-left, .scroll-right {
-  border: none;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  user-select: none;
-}
-
 .about-ruby {
   font-size: 20px;
   color: #444;
