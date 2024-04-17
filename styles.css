@@ -310,7 +310,7 @@ img.img-fluid:hover {
     color: #b3b3b3;
   }
 
-  ul, .footer, .grid-item, .cta-btn {
+  ul, .footer, .grid-item, .cta-btn, .grid-item a.video-link, .grid-item a.video-link:visited {
     background-color: #444;
   }
 
@@ -318,7 +318,10 @@ img.img-fluid:hover {
     color: #ccc;
   }
 
-  .grid-item, .cta-btn {
+  .grid-item,
+  .cta-btn,
+  .grid-item a.video-link,
+  .grid-item a.video-link:visited {
     border-color: #555;
   }
 
@@ -327,8 +330,7 @@ img.img-fluid:hover {
   .footer__text a:hover,
   .about-ruby,
   .grid-item .title,
-  .grid-item p
-  {
+  .grid-item p {
     color: #fff;
   }
 }
