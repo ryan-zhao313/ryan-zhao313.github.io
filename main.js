@@ -1,29 +1,53 @@
 // Displays the projects from the projects.json file dynamically
-function displayProjects() {
-  fetch('projects.json')
-    .then(response => response.json())
-    .then(projects => {
-      const projectsContainer = document.getElementById('projects');
-      projects.forEach(project => {
-        const projectDiv = document.createElement('div');
-        projectDiv.classList.add('grid-item');
+async function displayProjects() {
+  try {
+    const response = await fetch('projects.json');
+    const projects = await response.json();
+    const projectsContainer = document.getElementById('projects');
+    let htmlContent = '';
 
-        let title = project.url ? `<a href="${project.url}" class="title">${project.title}</a>` : `<div class="title">${project.title}</div>`;
-        const description = `<p>${project.description}</p>`;
+    projects.forEach(project => {
+      let title = project.url ? `<a href="${project.url}" class="title">${project.title}</a>` : `<div class="title">${project.title}</div>`;
+      const description = `<p>${project.description}</p>`;
+      let media = `<img class="center" loading="lazy" src="${project.image}" alt="${project.title}" onerror="this.src='fallback-image.jpg'; this.onerror=null;">`;
+      let video = project.video ? `<a href="${project.video}" class="video-link">Watch video</a>` : '';
 
-        let media = `<img class="center" loading="lazy" src="${project.image}"
-                      alt="${project.title}" onerror="this.style.display='none'"/>`;
+      htmlContent += `<div class='grid-item'>${title}${description}${media}${video}</div>`;
+    });
 
-        let video = '';
-        if (project.video) {
-          video = `<a href="${project.video}" class="video-link">Watch video</a>`;
-        }
-
-        projectDiv.innerHTML = `${title}${description}${media}${video}`;
-        projectsContainer.appendChild(projectDiv);
-      });
-    })
-    .catch(error => console.error('Error loading projects:', error));
+    projectsContainer.innerHTML = htmlContent;
+  } catch (error) {
+    console.error('Error loading projects:', error);
+    document.getElementById('projects').innerHTML = '<p>Error loading projects.</p>';
+  }
 }
 
-displayProjects();
+// Displays images from the ruby.json file dynamically
+async function loadImages() {
+  try {
+    const response = await fetch('ruby.json');
+    const pictures = await response.json();
+    const picturesContainer = document.querySelector('.pictures');
+    let htmlContent = '';
+
+    pictures.forEach(image => {
+      htmlContent += `
+        <div class='picture'>
+          <img class='film-image' src='${image.src}' alt='Photo of Ruby'
+               onerror="this.src='fallback-image.jpg'; this.onerror=null;">
+          <div class="image-caption">${image.caption}</div>
+        </div>
+      `;
+    });
+
+    picturesContainer.innerHTML = htmlContent;
+  } catch (error) {
+    console.error('Error loading pictures:', error);
+    document.querySelector('.pictures').innerHTML = '<p>Error loading images.</p>';
+  }
+}
+
+window.onload = function() {
+  displayProjects();
+  loadImages();
+};
