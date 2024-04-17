@@ -310,7 +310,7 @@ img.img-fluid:hover {
     color: #b3b3b3;
   }
 
-  ul, .footer, .grid-item, .cta-btn, .grid-item a.video-link, .grid-item a.video-link:visited {
+  ul, .footer, .grid-item {
     background-color: #444;
   }
 
@@ -318,11 +318,18 @@ img.img-fluid:hover {
     color: #ccc;
   }
 
-  .grid-item,
-  .cta-btn,
-  .grid-item a.video-link,
-  .grid-item a.video-link:visited {
+  .grid-item {
     border-color: #555;
+  }
+
+  .cta-btn, .grid-item a.video-link, .grid-item a.video-link:visited {
+    background-color: #0056b3;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-btn:hover, .grid-item a.video-link:hover {
+    background-color: #00468c;
   }
 
   .about-wrapper__info-text,

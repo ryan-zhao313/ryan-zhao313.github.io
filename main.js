@@ -9,7 +9,7 @@ async function displayProjects() {
     projects.forEach(project => {
       const description = `<p>${project.description}</p>`;
       let media = `<img class="center" loading="lazy" src="${project.image}" alt="${project.title}" onerror="this.src='fallback-image.jpg'; this.onerror=null;">`;
-      let video = project.video ? `<a href="${project.video}" class="video-link">Watch Videos</a>` : '';
+      let video = project.video ? `<a href="${project.video}" class="video-link">Watch Video</a>` : '';
 
       htmlContent += `
         <div class='grid-item'>
