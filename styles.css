@@ -64,6 +64,15 @@ ul {
   margin-bottom: 50px;
 }
 
+.projects-wrapper a, .projects-wrapper a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-wrapper a:hover {
+  text-decoration: none;
+}
+
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -87,6 +96,7 @@ ul {
 
 .grid-item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 /* Title styling */
@@ -112,8 +122,13 @@ ul {
   display: block;
 }
 
+.video-link-container {
+  display: flex;
+  justify-content: center;
+}
+
 /* Video link styling */
-.grid-item .video-link {
+.grid-item a.video-link, .grid-item a.video-link:visited {
   text-align: center;
   display: block;
   background: #007BFF;
@@ -122,11 +137,13 @@ ul {
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin: 5px auto 5px;
-  width: 40%;
+  margin: 5px 10px;
+  width: auto;
+  position: relative;
+  z-index: 2;
 }
 
-.grid-item .video-link:hover {
+.grid-item a.video-link:hover {
   background-color: #0056b3;
 }
 

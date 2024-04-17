@@ -7,12 +7,19 @@ async function displayProjects() {
     let htmlContent = '';
 
     projects.forEach(project => {
-      let title = project.url ? `<a href="${project.url}" class="title">${project.title}</a>` : `<div class="title">${project.title}</div>`;
       const description = `<p>${project.description}</p>`;
       let media = `<img class="center" loading="lazy" src="${project.image}" alt="${project.title}" onerror="this.src='fallback-image.jpg'; this.onerror=null;">`;
-      let video = project.video ? `<a href="${project.video}" class="video-link">Watch video</a>` : '';
+      let video = project.video ? `<a href="${project.video}" class="video-link">Watch Videos</a>` : '';
 
-      htmlContent += `<div class='grid-item'>${title}${description}${media}${video}</div>`;
+      htmlContent += `
+        <div class='grid-item'>
+          <a href="${project.url}" class="main-link">
+            <div class="title">${project.title}</div>
+            ${description}${media}
+          </a>
+          ${video !== '' ? `<div class="video-link-container">${video}</div>` : ''}
+        </div>
+      `;
     });
 
     projectsContainer.innerHTML = htmlContent;
