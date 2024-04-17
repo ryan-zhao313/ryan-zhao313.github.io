@@ -295,7 +295,7 @@ img.img-fluid:hover {
   }
 
   ul, .footer, .grid-item, .cta-btn {
-    background-color: #333;
+    background-color: #444;
   }
 
   .footer__text a {
@@ -303,10 +303,16 @@ img.img-fluid:hover {
   }
 
   .grid-item, .cta-btn {
-    border-color: #444;
+    border-color: #555;
   }
 
-  .about-wrapper__info-text, .section-title, .footer__text a:hover {
+  .about-wrapper__info-text,
+  .section-title,
+  .footer__text a:hover,
+  .about-ruby,
+  .grid-item .title,
+  .grid-item p
+  {
     color: #fff;
   }
 }
