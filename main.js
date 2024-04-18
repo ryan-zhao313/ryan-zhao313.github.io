@@ -54,7 +54,29 @@ async function loadImages() {
   }
 }
 
-window.onload = function() {
-  displayProjects();
-  loadImages();
+function addPictureClickHandlers() {
+  const filmImages = document.querySelectorAll('.film-image');
+  filmImages.forEach(function(image) {
+      image.addEventListener('mouseup', function(e) {
+          const target = e.target;
+          const parent = target.parentElement.parentElement;
+          const targetRect = target.getBoundingClientRect();
+          const parentScrollLeft = parent.scrollLeft;
+          const viewportWidth = window.innerWidth;
+          const targetWidth = target.offsetWidth;
+          const calculatedScrollPosition = targetRect.left + parentScrollLeft - (viewportWidth - targetWidth) / 2;
+
+          // Smooth scrolling animation
+          parent.scrollTo({
+              left: calculatedScrollPosition,
+              behavior: 'smooth'
+          });
+      });
+  });
+};
+
+window.onload = async function() {
+  await displayProjects();
+  await loadImages();
+  addPictureClickHandlers();
 };

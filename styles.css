@@ -10,6 +10,13 @@ body {
   height: 100vh;
   overflow-y: auto;
   box-sizing: border-box;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 2;
+  height: 0;
 }
 
 html {
@@ -273,6 +280,7 @@ img.img-fluid:hover {
 }
 
 .picture {
+  cursor: pointer;
   margin-right: 30px;
   margin-left: 30px;
 }
@@ -291,15 +299,14 @@ img.img-fluid:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .picture {
-    width: calc(50% - 10px);
+@media only screen and (max-width:600) {
+  .pictures {
+    padding: 50px 50px 50px 20px;
   }
-}
 
-@media (max-width: 480px) {
-  .picture {
-    width: 100%;
+  .film-image {
+    width: 90vw;
+    height: auto !important;
   }
 }
 
