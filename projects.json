@@ -8,11 +8,25 @@
     "video": "https://youtu.be/OlX6z_ugQhw?si=AAYtdbzivoZtYUxS"
   },
   {
+    "id": "brainTumorDetection",
+    "title": "Brain Tumor Detection",
+    "description": "Detects brain tumors from MRI scans using OpenCV and Machine Learning",
+    "image": "./assets/images/brain-tumor.jpg",
+    "url": "https://gitfront.io/r/ryan-zhao313/GUH3bHrKGXkv/brain-tumor-detection/"
+  },
+  {
+    "id": "mpoxRecommenderSystem",
+    "title": "Recommender System for MonkeyPox Testing",
+    "description": "ANN model used to recommend whether an individual should get tested for MonkeyPox",
+    "image": "./assets/images/ANN-model.png",
+    "url": "https://gitfront.io/r/ryan-zhao313/LkbzTeqm1KTS/mpoxRecommenderSystem/"
+  },
+  {
     "id": "pacman",
     "title": "Pacman Pathfinding AI",
     "description": "Custom pathfinding Pac-Man AI to beat the classic arcade game",
     "image": "./assets/images/pacman.gif",
-    "url": "#"
+    "url": "https://gitfront.io/r/ryan-zhao313/nR3FM4jeiBSp/pacman-reinforcement-pathfinding/"
   },
   {
     "id": "poetryVisualization",
