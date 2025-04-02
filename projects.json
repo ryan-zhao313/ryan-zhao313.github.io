@@ -1,5 +1,12 @@
 [
   {
+    "id": "queensSolver",
+    "title": "LinkedIn Queens Solver",
+    "description": "Solves the LinkedIn Queens Game",
+    "image": "./assets/images/queens-solver.PNG",
+    "url": "https://github.com/ryan-zhao313/queens-solver"
+  },
+  {
     "id": "swooperMarket",
     "title": "SwooperMarket",
     "description": "Marketplace web-app for buying and selling items at Emory University",
