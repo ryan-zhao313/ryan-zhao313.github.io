@@ -1,5 +1,12 @@
 [
   {
+    "id": "pdfChatbot",
+    "title": "PDF Chatbot",
+    "description": "Upload PDF and ask questions",
+    "image": "./assets/images/chatbot.png",
+    "url": "https://github.com/ryan-zhao313/pdf-chatbot"
+  },
+  {
     "id": "queensSolver",
     "title": "LinkedIn Queens Solver",
     "description": "Solves the LinkedIn Queens Game",
