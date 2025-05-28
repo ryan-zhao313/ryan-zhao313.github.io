@@ -1,7 +1,18 @@
+html,
 body {
-  font-family: 'Comfortaa', sans-serif;
-  background-color: #ffffff;
-  color: #222;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
+
+body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: #fffcf0;
+  color: #313131;
+  letter-spacing: -.025rem;
   font-size: 18px;
   margin: 0;
   padding: 0px;
@@ -17,10 +28,6 @@ body {
 body::-webkit-scrollbar {
   width: 2;
   height: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 ul {
@@ -123,7 +130,7 @@ ul {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #222;
+  color: #313131;
   text-decoration: none;
 }
 
@@ -319,44 +326,5 @@ img.img-fluid:hover {
   .film-image {
     width: 90vw;
     height: auto !important;
-  }
-}
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  body, .footer{
-    background-color: #222;
-    color: #b3b3b3;
-  }
-
-  ul, .footer, .grid-item {
-    background-color: #444;
-  }
-
-  .footer__text a {
-    color: #ccc;
-  }
-
-  .grid-item {
-    border-color: #555;
-  }
-
-  .cta-btn, .grid-item a.video-link, .grid-item a.video-link:visited {
-    background-color: #0056b3;
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .cta-btn:hover, .grid-item a.video-link:hover {
-    background-color: #00468c;
-  }
-
-  .about-wrapper__info-text,
-  .section-title,
-  .footer__text a:hover,
-  .about-ruby,
-  .grid-item .title,
-  .grid-item p {
-    color: #fff;
   }
 }
